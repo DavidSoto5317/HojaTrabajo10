@@ -9,8 +9,10 @@ from Funciones import *
 
 desicion = 0
 
-while desicion != 6:
-    print ("\nQue desea hacer?\n1.Ingresar Doctores, con los datos de su especialidad y como contactarlo\n2.Ingresar Pacientes, con sus datos.\n3.Ingresar que un paciente dado, visita a un doctor especifico. Indicar la fecha de visita y la medicina que le receta.\n4.Consultar cuales doctores tienen una especialidad dada.\n5.Ingresar que una persona conoce a otra persona.\n6.Salir\n")
+while desicion != 8:
+    print ("\nQue desea hacer?\n1.Ingresar nuevo doctor\n2.Ingresar nuevo paciente.\n3.Ingresar que un paciente dado, visita a un doctor especifico,")
+    print("en una fecha de visita y la medicina recetada.\n4.Consultar cuales doctores tienen una especialidad dada.\n5.Ingresar que una persona conoce a otra persona.")
+    print("6.Recomendacion dado un paciente\n7.Recomendacion dado un doctor\n8.Salir del programa")
     desicion = int(input("Ingrese su elecccion: "))
     
     if(desicion == 1):
@@ -31,10 +33,15 @@ while desicion != 6:
         relacionVisita()
 
     if(desicion == 4):
-        especialidadDada = raw_input("Ingrese la especialidad que desea buscar: ")
-        consultarEspecialidad(especialidadDada)
-
+        consultarEspecialidad()
+        
     if(desicion == 5):
         relacionarPersonas()
+
+    if(desicion == 6):
+        recomendacionDadoUnPaciente()
+        
+    if(desicion == 7):
+        recomendacionDadoUnDoctor()
 
     

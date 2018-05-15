@@ -7,3 +7,6 @@ MATCH (n)-[r]->(m) RETURN n, r, m;
 Para borrar la base de datos--------------------
 MATCH (n) OPTIONAL MATCH (n)-[r]-() DELETE n,r
 ------------------------------------------------
+
+Para borrar una relacion en especifico del nodo con nombre
+MATCH (n { name: 'David Sottens' })-[r:PACIENT]->() DELETE r
