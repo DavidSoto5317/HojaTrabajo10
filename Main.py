@@ -6,8 +6,11 @@
 # - Alejandro Tejada 17854
 
 from Funciones import *
+from ModAlejandro import *
 
 desicion = 0
+
+
 
 while desicion != 8:
     print ("\nQue desea hacer?\n1.Ingresar nuevo doctor\n2.Ingresar nuevo paciente.\n3.Ingresar que un paciente dado, visita a un doctor especifico,")
